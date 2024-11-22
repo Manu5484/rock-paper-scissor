@@ -94,7 +94,7 @@ function playgame(yourchoice)
       }
     }
 
-   picks.innerHTML=`your choice <img src='img/${yourchoice}-emoji.png'> - <img src='img/${computerchoice}-emoji.png'> computer choice`;
+   picks.innerHTML=`your choice <img src='${yourchoice}-emoji.png'> - <img src='${computerchoice}-emoji.png'> computer choice`;
 
     if(result==='you won')
     {
