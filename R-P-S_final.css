@@ -1,0 +1,65 @@
+body{
+  background-color: rgb(31, 31, 31);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button_container
+{
+  display: flex;
+  gap: 40px;
+}
+
+h1{
+  font-size:55px;
+}
+
+.rpsbutton{
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid white;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+
+.rpsbutton img{
+  width: 60%;
+  height: 50%;
+}
+img{
+  width: 40px;
+  height: 40px;
+}
+
+p{
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.choice{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.result{
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.button_container{
+  display: flex;
+  gap: 40px;
+}
+
+.reset_button ,.autoplay_button{
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

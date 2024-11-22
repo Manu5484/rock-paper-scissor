@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="R-P-S_final.css">
+  </head>
+  <body>
+    <h1>ROCK-PAPER-SISSOR</h1>
+      <div class="button_container">
+        <button class="rpsbutton js-rock-button"><img src="img/rock-emoji.png" alt=""></button>
+
+        <button onclick="
+        yourchoice='paper';
+        playgame(yourchoice);
+        " class="rpsbutton"><img src="img/paper-emoji.png" alt=""></button>
+
+        <button class="rpsbutton js-scissor-button"><img src="img/scissor-emoji.png" alt=""></button>
+      </div>
+      <p class="js-choice choice"></p>
+      <p class="js-result result"></p>
+      <p class="score_display"></p>
+
+      <div class="button_container">
+        <button class="reset_button"
+        onclick="
+        score.wins=0;
+        score.loses=0;
+        score.tie=0; 
+        localStorage.removeItem('score');
+        document.querySelector('.score_display').innerHTML=`wins ${score.wins} loses ${score.loses} tie ${score.tie}`;
+        "
+        >reset</button>
+
+        <button class="js_autoplay_button autoplay_button" onclick="autoplay();">autoplay</button>
+
+      </div>
+
+    <script src="autoplay_rps.js" defer></script>
+  </body>
+
+</html>
